@@ -14,3 +14,14 @@ a {
 * {
   box-sizing: border-box;
 }
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}

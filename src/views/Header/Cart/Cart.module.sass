@@ -1,0 +1,74 @@
+.cartOverlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 9
+  background-color: rgba(0,0,0,.4)
+
+.cart
+  width: 700px
+  margin: 100px auto
+  max-width: 100%
+  box-sizing: border-box
+  padding: 24px
+  border-radius: 12px
+  box-shadow: 1px 0 3px
+  background-color: #fff
+
+.cartHeader
+  width: 100%
+  margin: 16px 0 32px
+  display: flex
+  justify-content: space-between
+  .cartTitle
+    font-size: 32px
+    font-weight: 700
+  .closeButton
+    background-color: transparent
+    font-weight: 700
+    border: 0
+    cursor: pointer
+
+.product
+  width: 100%
+  margin: 8px 0
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  border: 1px solid #eee
+  .productImage
+    width: 60px
+  .productTitle
+    margin: 0 16px
+    font-weight: 700
+  .productDeleteButton
+    margin: 0 8px
+    font-weight: 700
+    background-color: transparent
+    border: 0
+    cursor: pointer
+  .productCount
+    width: 60px
+    margin-left: auto
+    padding: 4px
+    font-weight: 600
+    text-align: center
+
+.cartFooter
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.cartTotal
+  display: flex
+  font-size: 24px
+
+.emptyCart
+  margin: 24px 0
+  text-align: center
+  font-weight: 700
+  font-size: 24px
+  color: #555
