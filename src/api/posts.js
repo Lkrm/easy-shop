@@ -1,6 +1,5 @@
-import api from "./api";
-import {ENDPOINTS} from "./api.constants";
-// todo: prettier and spaces
+import api from './api';
+import { ENDPOINTS } from './api.constants';
 
 /**
  @func fetchPosts
@@ -10,5 +9,5 @@ import {ENDPOINTS} from "./api.constants";
  @param limit - count of posts
  @param offset - offset from that start to receive posts
  */
-export const fetchPosts = (limit, offset) => api.get(ENDPOINTS.posts, { params: { limit, offset }})
-  .then((res) => res.data);
+export const fetchPosts = (limit, offset) =>
+  api.get(ENDPOINTS.posts, { params: { limit, offset } }).then((res) => res.data);

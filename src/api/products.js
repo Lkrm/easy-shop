@@ -4,8 +4,8 @@ import { ENDPOINTS } from './api.constants';
 /**
  @async fetchProducts
  Function for fetching products of API.
- In fulfilled case - return array of products
- In failure case - return object of error
+ In fulfilled case - return array of products;
+ In failure case - return object of error;
  @param limit {number} - count of products
  @param offset {number} - offset from that start to receive products
  @return {promise}
@@ -16,8 +16,8 @@ export const fetchProducts = (limit, offset) =>
 /**
  @async fetchProduct
  Function for fetching product by id of API.
- In fulfilled case - return object of product
- In failure case - return object of error
+ In fulfilled case - return object of product;
+ In failure case - return object of error;
  @param productId {number} - product id to fetch
  @return {promise}
  */

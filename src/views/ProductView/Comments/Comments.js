@@ -1,11 +1,17 @@
 import P from 'prop-types';
+
 import CommentsField from './CommentsField';
 import Comment, { CommentType } from './Comment';
+import styles from './Comments.module.sass';
 
-const Comments = ({ comments }) => (
-  <div>
+const Comments = ({ comments = [] }) => (
+  <div className={styles.container}>
     <CommentsField />
-    {!comments.length ? <h2>Not found comments yet!</h2> : <h2>Comments: </h2>}
+    {!comments.length ? (
+      <div className={styles.notFound}>Not found comments yet!</div>
+    ) : (
+      <div className={styles.title}>Comments:</div>
+    )}
     {comments.map((comment) => (
       <Comment key={comment.id} comment={comment} />
     ))}
